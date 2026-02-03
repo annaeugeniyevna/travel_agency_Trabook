@@ -1,0 +1,172 @@
+.subscribe {
+    background-color: #FEFCFB;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.subscribe__content {
+    position: relative;
+    z-index: 2;
+    bottom: -170px;
+    overflow: hidden;
+
+    background-color: #FA7436;
+    border-radius: 15px;
+
+    padding: 60px 10px;
+}
+
+.subscribe__decor--palms {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    z-index: 1;
+    max-width: 60px;
+
+    top: 6px;
+   right: 5px;
+}
+
+.subscribe__decor--circles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscribe__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.subscribe__title {
+    font-family: 'Volkhov', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 1.3;
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscribe-input__wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    padding: 15px 25px;
+}
+
+.subscribe-input__svg {
+    width: 100%;
+    max-width: 15px;
+}
+
+.subscribe__input {
+    flex: 1;
+
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 250px;
+    
+    padding: 5px 0;
+}
+
+.subscribe__input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.subscribe-btn__wrap {
+    text-align: center;
+}
+
+.subscribe__btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+
+    padding: 12px 23px;
+}
+
+.subscribe-btn__link {
+    color: #FA7436;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .subscribe__title {
+        max-width: 700px;
+        font-size: 48px;
+    }
+
+    .subscribe__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        
+        max-width: 550px;
+        width: 100%;
+        
+        padding: 5px 9px;
+
+        margin: 0 auto;
+    }
+
+    .subscribe__btn {
+        background-color: #FA7436;
+    }
+
+    .subscribe-btn__link {
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 1279px) {
+    .subscribe__content {
+        max-width: 1170px;
+       display: flex;
+       justify-content: center;
+    }
+
+    .subscribe__decor--palms {
+        max-width: 110px;
+    }
+    .subscribe__decor--circles {
+        max-width: 380px;
+    }
+
+    .subscribe__title {
+        margin-bottom: 64px;
+    }
+
+    .subscribe__form {
+        max-width: 670px;
+    }
+}

@@ -1,0 +1,32 @@
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+*
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: #FA7436;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1279px) {
+    .container {
+        max-width: 1279px;
+        padding: 0 100px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,191 @@
+.vacation {
+    background-color: #FEFCFB;
+    
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.vacation__decor {
+    display: none;
+}
+
+.vacation__title {
+    font-family: 'Volkhov', sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    color: #222222;
+
+    margin-bottom: 30px;
+}
+
+.vacation__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999999;
+    line-height: 1.5;
+
+    margin-bottom: 55px;
+}
+
+.vacation .slider__nav {
+    display: none;
+}
+
+.card__slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.card__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.vacation 
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+
+    width: 100%;
+    min-width: 250px;
+}
+
+.vacation-card__image {
+    width: 100%;
+    max-width: 350px;
+}
+
+.vacation-price__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    margin: 24px 0 16px 0;
+}
+
+.vacation-price__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #222222;
+}
+
+.vacation__price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-weight: 22px;
+    color: #FA7436;
+}
+
+.vacation-trip__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px 24px 20px;
+}
+
+.vacation__trip {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+.tip__arrow {
+    width: 100%;
+    max-width: 13px;
+}
+
+.trip__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #999999;
+}
+
+.vacation-rating__wrap {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.vacation-rating__star {
+    width: 100%;
+    max-width: 11px;
+}
+
+.vacation__star {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #999999;
+}
+
+
+@media (min-width: 768px) {
+    .vacation__title {
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .vacation__text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .vacation__viewport {
+        overflow: hidden;
+    }
+
+    .vacation .card {
+        flex-shrink: 0;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1279px) {
+
+    .vacation__head {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .vacation__text {
+        max-width: 540px;
+
+        text-align: center;
+    }
+
+    .vacation .slider__nav {
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+
+        margin: 0 35px 24px 0;
+    }
+
+    .vacation .card {
+        max-width: 350px;
+    }
+
+    .vacation__decor {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 150px;
+
+        width: 100%;
+        max-width: 100px;
+    }
+}

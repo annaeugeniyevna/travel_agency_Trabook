@@ -1,0 +1,22 @@
+.card__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #999999;
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.dot.active {
+    background-color: #FA7436;
+
+    transform: scale(1.3);
+} 
