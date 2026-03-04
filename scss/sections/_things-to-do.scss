@@ -1,0 +1,140 @@
+.things-to-do {
+    background-color: $bg-section-alt;
+    
+    position: relative;
+
+    padding: $space-6 $space-2 $space-4 $space-2;
+    margin: 0 auto;
+}
+
+.to-do__decor {
+    display: none;
+}
+
+.to-do__title {
+    @include heading-responsive (37px, 40px, 48px, 700);
+    font-family: 'Volkhov', sans-serif;
+    color: $text-primary;
+
+    margin-bottom: $space-4;
+}
+
+.to-do__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-light;
+    line-height: 1.5;
+
+    width: 100%;
+    max-width: 470px;
+
+    margin-bottom: $space-6;
+}
+
+.to-do__card {
+    background-color: $white;
+    box-shadow: 0 0 40px rgba(0,0,0,0.05);
+    
+    border-radius: $radius-sm;
+    
+    width: 100%;
+    max-width: 280px;
+    
+    margin-bottom: $space-4;
+    padding: $space-4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first__to-do-card {
+    background-image: url("../images/To-do__card-line1.webp");
+}
+
+.second__to-do-card {
+    background-image: url("../images/To-do__card-line2.webp");
+}
+
+.third__to-do-card {
+    background-image: url("../images/To-do__card-line1.webp");
+}
+
+.to-do-card__svg {
+    width: 100%;
+    max-width: 35px;
+
+    margin-bottom: $space-5;
+}
+
+.to-do-card__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: $text-primary;
+
+    margin-bottom: $space-2;
+}
+
+.to-do-card__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $text-light;
+    line-height: 1.7;
+}
+
+
+@media (min-width: $tablet) {
+    .to-do__title {
+        text-align: center;
+    }
+
+    .to-do__text {
+        font-size: 18px;
+        max-width: 700px;
+    }
+}
+
+
+@media (min-width: $desktop) {
+    .things-to-do {
+        padding: $space-12 0 $space-14 0;
+        margin: 0 auto;
+    }
+
+    .things__head {
+        display: flex;
+       justify-content: center;
+
+       position: relative;
+    }
+
+    .to-do__decor {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: $space-10;
+
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .to-do-text__wrap {
+        display: flex;
+        justify-content: center;
+    }
+    .to-do__text {
+
+        max-width: 480px;
+
+        text-align: center;
+    }
+
+    .to-do-card__wrap {
+        display: flex;
+        justify-content: center;
+        gap: $space-4;
+    }
+}

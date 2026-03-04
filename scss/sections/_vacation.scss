@@ -1,0 +1,187 @@
+.vacation {
+    background-color: $bg-section-light;
+    
+    padding: $space-6 $space-2 $space-12 $space-2;
+}
+
+.vacation__decor {
+    display: none;
+}
+
+.vacation__title {
+    @include heading-responsive (37px, 48px, 48px, 700);
+    font-family: 'Volkhov', sans-serif;
+    color: $text-primary;
+
+    margin-bottom: $space-4;
+}
+
+.vacation__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-light;
+    line-height: 1.5;
+
+    margin-bottom: $space-7;
+}
+
+.vacation .slider__nav {
+    display: none;
+}
+
+.card__slider {
+    display: flex;
+    gap: $space-4;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: $space-2;
+}
+
+.card__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.vacation 
+.card {
+    background-color: $white;
+    border-radius: $radius-lg;
+    border: 1px solid $gray-200;
+
+    width: 100%;
+    min-width: 250px;
+}
+
+.vacation-card__image {
+    width: 100%;
+    max-width: 350px;
+}
+
+.vacation-price__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 $space-2;
+    margin: $space-3 0 $space-2 0;
+}
+
+.vacation-price__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: $text-primary;
+}
+
+.vacation__price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-weight: 22px;
+    color: $color-primary;
+}
+
+.vacation-trip__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 $space-2 $space-2 $space-2;
+}
+
+.vacation__trip {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+
+}
+
+.tip__arrow {
+    width: 100%;
+    max-width: 13px;
+}
+
+.trip__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: $text-light;
+}
+
+.vacation-rating__wrap {
+    display: flex;
+    gap: $space-1;
+    align-items: center;
+}
+
+.vacation-rating__star {
+    width: 100%;
+    max-width: 11px;
+}
+
+.vacation__star {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: $text-light;
+}
+
+
+@media (min-width: $tablet) {
+    .vacation__title {
+        text-align: center;
+    }
+
+    .vacation__text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .vacation__viewport {
+        overflow: hidden;
+    }
+
+    .vacation .card {
+        flex-shrink: 0;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: $desktop) {
+
+    .vacation__head {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .vacation__text {
+        max-width: 540px;
+
+        text-align: center;
+    }
+
+    .vacation .slider__nav {
+        display: flex;
+        justify-content: right;
+        gap: $space-4;
+
+        margin: 0 $space-4 $space-3 0;
+    }
+
+    .vacation .card {
+        max-width: 330px;
+    }
+
+    .vacation__decor {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: $space-16;
+
+        width: 100%;
+        max-width: 100px;
+    }
+}

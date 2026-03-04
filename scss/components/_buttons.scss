@@ -1,0 +1,14 @@
+@mixin base-button {
+    display: inline-block;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    background-color: $button-bg;
+
+    border: none;
+    border-radius: $radius-md;
+    cursor: pointer;
+
+    padding: $space-2 $space-3;
+}

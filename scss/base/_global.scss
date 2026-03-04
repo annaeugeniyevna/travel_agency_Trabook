@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $space-1;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: $text-highlight;
+}
+
+
+@media (min-width: $tablet) {
+    .container {
+        width: 100%;
+        max-width: 700px;
+        padding: 0 $space-4;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 $space-8;
+        margin: 0 auto;
+    }
+}
+
+// * {
+//     outline: 1px solid red;
+// }

@@ -1,0 +1,166 @@
+.subscribe {
+    background-color: $bg-section-light;
+    
+    padding: $space-1;
+}
+
+.subscribe__content {
+    max-width: 384px;
+    position: relative;
+    z-index: 2;
+    bottom: -170px;
+    overflow: hidden;
+
+    background-color: $bg-primary;
+    border-radius: $radius-xl;
+
+    padding: $space-7 $space-2;
+    margin: 0 auto;
+}
+
+.subscribe__decor--palms {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    z-index: 1;
+    max-width: 60px;
+
+    top: 6px;
+    right: 5px;
+}
+
+.subscribe__decor--circles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscribe__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.subscribe__title {
+    @include heading-responsive (30px, 48px, 44px, 700);
+    font-family: 'Volkhov', sans-serif;
+    color: $white;
+    text-align: center;
+
+    margin-bottom: $space-6;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+}
+
+.subscribe-input__wrap {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    background-color: $white;
+    border-radius: $radius-lg;
+
+    padding: $space-2 $space-3;
+}
+
+.subscribe-input__svg {
+    width: 100%;
+    max-width: 16px;
+}
+
+.subscribe__input {
+    flex: 1;
+
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 250px;
+    
+    padding: 5px 0;
+}
+
+.subscribe__input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.subscribe-btn__wrap {
+    text-align: center;
+}
+
+.subscribe__btn {
+    @include base-button;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $white; 
+    color: $color-primary;
+    text-decoration: none;
+    border-radius: $radius-md;
+
+    padding: $space-2 $space-3;
+}
+
+@media (min-width: $tablet) {
+    .subscribe__content {
+        max-width: 672px;
+    }
+
+    .subscribe__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        background-color: $white;
+        border-radius: $radius-lg;
+        
+        max-width: 550px;
+        width: 100%;
+        
+        padding: 5px 9px;
+
+        margin: 0 auto;
+    }
+
+    .subscribe__btn {
+        background-color: $button-bg;
+        color: $white;
+    }
+}
+
+    
+
+@media (min-width: $desktop) {
+    .subscribe__content {
+        max-width: 1170px;
+        display: flex;
+        justify-content: center;
+        
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .subscribe__decor--palms {
+        max-width: 110px;
+    }
+    .subscribe__decor--circles {
+        max-width: 380px;
+    }
+
+    .subscribe__title {
+        max-width: 640px;
+        margin-bottom: $space-8;
+    }
+
+    .subscribe__form {
+        max-width: 670px;
+    }
+}

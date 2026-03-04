@@ -1,0 +1,263 @@
+.deals {
+    background-color: $bg-section-light;
+    
+    padding-top: $space-6;
+    padding-bottom: $space-6;
+}
+
+.deals__title {
+    @include heading-responsive (40px, 40px, 48px, 700);
+    font-family: 'Volkhov', sans-serif;
+    color: $color-dark;
+
+    margin-bottom: $space-3;
+}
+
+.deals__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-light;
+    line-height: 1.5;
+
+
+    margin-bottom: $space-7;
+}
+
+.card__slider {
+    display: flex;
+    gap: $space-4;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    padding-bottom: $space-1;
+}
+
+.card__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.deals
+.card {
+    background-color: $white;
+    border-radius: $radius-sm;
+    border: 1px solid $gray-200;
+    
+    width: 100%;
+    max-width: 270px;
+    
+    margin-bottom: $space-1;
+    
+    scroll-snap-align: start;
+}
+
+.deals .card:hover {
+    box-shadow: 0 10px 30px rgba(250,116,54,0.25);
+}
+
+.deal-image__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.deal-card__image {
+    display: block;
+
+    width: 100%;
+    min-width: 250px;
+}
+
+.card__overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card-overlay__btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    background-color: $button-bg;
+    color: $white;
+    text-decoration: none;
+    border: none;
+    border-radius: $radius-md;
+
+    padding: $space-2 $space-2;
+
+    position: absolute;
+    left: 50%;
+    bottom: $space-6;
+    transform: translateX(-50%);
+}
+
+.card:hover .card__overlay {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.deal-card-subtitle__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    margin: $space-4 $space-2;
+}
+
+.deal-card__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-dark;
+}
+
+.deal-card__rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.rating__svg {
+    width: 100%;
+    max-width: 11px;
+}
+
+.rating {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: $text-secondary;
+}
+
+.deal-card-location__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 $space-2 $space-4 $space-2;
+}
+
+.deal__location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location__svg {
+    width: 100%;
+    max-width: 12px;
+}
+
+.deal__city {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: $text-secondary;
+}
+
+.deal-card-price__wrap {
+    display: flex;
+    gap: $space-2;
+    align-items: center;
+}
+
+.card__sale {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: $text-secondary;
+
+    text-decoration: line-through;
+    text-decoration-color: $text-secondary;
+}
+
+.card__price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: $text-highlight;
+    background-color: $bg-card-light;
+
+    border-radius: $radius-sm;
+
+    padding: 4px 2px;
+}
+
+.deals .slider__nav {
+    display: none;
+}
+
+
+@media (min-width: $tablet) {
+    .deals__title {
+        text-align: center;
+    }
+
+    .deals__text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: $desktop) {
+    .deals {
+        padding: $space-14 0;
+    }
+
+    .deals-text__wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .deals__text {
+        max-width: 430px;
+
+        text-align: center;
+    }
+
+    .deals 
+    .card {
+        width: 100%;
+        max-width: 270px;
+
+        cursor: pointer;
+    }
+
+    .deal-card__image {
+        max-width: 270px;
+    }
+
+    .card__dots {
+        display: none;
+    }
+
+    .deals .slider__nav {
+        display: flex;
+        justify-content: center;
+        gap: $space-3;
+
+        margin-top: $space-6;
+    }
+
+    .slider__arrow {
+        width: 100%;
+        max-width: 40px;
+
+        cursor: pointer;
+    }
+
+    .slider__arrow:disabled {
+        cursor: not-allowed;
+    }
+
+}

@@ -1,0 +1,22 @@
+.card__dots {
+    display: flex;
+    justify-content: center;
+    gap: $space-1;
+
+    margin-top: $space-2;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: $text-light;
+    border-radius: $radius-circle;
+
+    transition: $transition-fast;
+}
+
+.dot.active {
+    background-color: $color-primary;
+
+    transform: scale(1.3);
+} 

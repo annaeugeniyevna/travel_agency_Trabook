@@ -1,0 +1,142 @@
+.footer {
+    background-color: $bg-section-alt;
+
+    padding-top: $space-18;
+    padding-bottom: $space-5;
+
+    position: relative;
+    z-index: 1;
+}
+
+.footer__logo {
+    width: 100%;
+    max-width: 100px;
+
+    margin-bottom: $space-3;
+}
+
+.footer__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.5;
+
+    width: 100%;
+    max-width: 250px;
+
+    margin-bottom: $space-2;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: $space-8;
+}
+
+.social__icon {
+    width: 100%;
+    max-width: 100px;
+}
+
+.footer__column {
+    margin-bottom: $space-4;
+}
+
+.footer__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: $text-primary;
+
+    margin-bottom: $space-3;
+}
+
+.footer__item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    margin-bottom: $space-2;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: $text-secondary;
+}
+
+.footer-line__decor {
+    content: "";
+    width: 100%;
+    min-width: 320px;
+    border: 1px solid $gray-200;
+
+    margin-bottom: $space-5;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+}
+
+.copyright__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.copyright__link {
+    color: $text-light;
+    text-decoration: none;
+}
+
+
+@media (min-width: $tablet) {
+    .footer__content {
+        display: flex;
+        gap: $space-4;
+    }
+
+    .footer__logo {
+        width: 100%;
+        max-width: 130px;
+    }
+
+    .footer__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-4;
+    }
+
+    .footer__item {
+        font-size: 18px;
+    }
+
+    .footer__copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .copyright__text {
+        font-size: 16px;
+}
+}
+
+@media (min-width: $desktop) {
+    .footer__content {
+       display: flex;
+       gap: $space-19;
+    }
+
+    .footer__nav {
+        display: flex;
+        gap: $space-13;
+    }
+
+    .footer__item {
+        margin-bottom: $space-3;
+    }
+}

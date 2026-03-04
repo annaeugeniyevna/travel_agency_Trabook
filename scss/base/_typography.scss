@@ -1,0 +1,17 @@
+@mixin heading-responsive (
+    $mobile-size,
+    $tablet-size,
+    $desctop-size,
+    $weight) {
+        font-size: $mobile-size;
+        font-weight: $weight;
+        line-height: 1.3;
+
+        @media (min-width: $tablet) {
+            font-size: $tablet-size;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: $desctop-size;
+        }
+}
